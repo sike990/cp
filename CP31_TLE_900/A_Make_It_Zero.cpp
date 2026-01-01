@@ -32,15 +32,19 @@ int main()
         cout << 1 <<" "<< n << endl;
         }
         else if(n%2 == 1){
-        cout << 3 << endl;
+        cout << 4 << endl;
         cout << 1 <<" "<< n << endl;
-        cout << 1 <<" "<< n << endl;
-        cout << 1 <<" "<< n << endl;  
+        cout << 2 <<" "<< n << endl;
+        cout << 1 <<" "<< 2 << endl; 
+        cout << 1 << " " << 2 << endl;
         }
         //Logic the property a^a == 0 is used 
         //so if n is odd then we have a b c fo eg
         //as each element we need a in even size for that we need to perform the xor operation atleast thrice then we will get something like a^a^a^a^a^a
         //for even we just need to do it twicw and we will get a^a^b^b as first element for a,b
+        //The above logic do work at all cases:
+        //Correct logic if n is odd then we can assume that if we keep doing all at once then we will always get non-zero number 
+        //thus we used the partition logic above
     }
     return 0;
 }
